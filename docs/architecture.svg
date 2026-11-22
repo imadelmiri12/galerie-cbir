@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 400" width="840" height="400" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="aGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+    <marker id="aBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f56d6"/></marker>
+    <marker id="aGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e9a45"/></marker>
+    <marker id="aOrange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e8700d"/></marker>
+    <filter id="sh" x="-5%" y="-5%" width="110%" height="115%"><feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#000" flood-opacity="0.18"/></filter>
+  </defs>
+
+  <rect width="840" height="400" rx="14" fill="#ffffff"/>
+
+  <!-- Navigateur -->
+  <rect x="20" y="118" width="140" height="104" rx="14" fill="#efefef" stroke="#b9b9b9" stroke-width="2" filter="url(#sh)"/>
+  <circle cx="90" cy="148" r="9" fill="#222"/>
+  <path d="M72 172 q0-16 18-16 q18 0 18 16 z" fill="#222"/>
+  <text x="90" y="194" text-anchor="middle" font-size="16" font-weight="700" fill="#222">Navigateur</text>
+  <text x="90" y="213" text-anchor="middle" font-size="16" font-weight="700" fill="#222">Utilisateur</text>
+
+  <!-- Navigateur <-> Web -->
+  <line x1="172" y1="170" x2="246" y2="170" stroke="#555" stroke-width="2.5"/>
+  <polygon points="164,170 175,164 175,176" fill="#555"/><polygon points="254,170 243,164 243,176" fill="#555"/>
+  <rect x="166" y="136" width="86" height="22" rx="11" fill="#e6e6e6" stroke="#bdbdbd"/>
+  <text x="209" y="151" text-anchor="middle" font-size="11" font-style="italic" fill="#444">HTTP / HTML</text>
+
+  <!-- Application web -->
+  <rect x="258" y="62" width="222" height="212" rx="16" fill="#dbe6fb" stroke="#2f5fd0" stroke-width="2.5" filter="url(#sh)"/>
+  <rect x="249" y="30" width="240" height="32" rx="16" fill="#1f4fcb"/>
+  <g stroke="#fff" stroke-width="1.6" fill="none"><circle cx="272" cy="46" r="8"/><ellipse cx="272" cy="46" rx="3.5" ry="8"/><line x1="264" y1="46" x2="280" y2="46"/></g>
+  <text x="381" y="51" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">web/app.py · port 8000</text>
+
+  <!-- web: Authentification -->
+  <rect x="270" y="76" width="198" height="42" rx="9" fill="#eef3fd" stroke="#2f5fd0" stroke-width="1.5"/>
+  <g fill="#1d3b8a"><circle cx="290" cy="90" r="5"/><path d="M280 106 q0-9 10-9 q10 0 10 9 z"/></g>
+  <path d="M303 96 l6 2 v5 q0 4-6 7 q-6-3-6-7 v-5 z" fill="#2f5fd0" stroke="#eef3fd" stroke-width="1.2"/>
+  <text x="385" y="95" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1a2a55">Authentification</text>
+  <text x="385" y="110" text-anchor="middle" font-size="10.5" fill="#33415f">(session, mot de passe haché)</text>
+
+  <!-- web: Galerie -->
+  <rect x="270" y="124" width="198" height="42" rx="9" fill="#eef3fd" stroke="#2f5fd0" stroke-width="1.5"/>
+  <rect x="283" y="133" width="22" height="22" rx="3" fill="none" stroke="#1d3b8a" stroke-width="2"/>
+  <circle cx="290" cy="140" r="2.2" fill="#1d3b8a"/>
+  <path d="M284 154 l6-6 l4 4 l4-5 l6 7 z" fill="#1d3b8a"/>
+  <text x="385" y="150" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1a2a55">Galerie &amp; Upload</text>
+
+  <!-- web: Recherche -->
+  <rect x="270" y="172" width="198" height="42" rx="9" fill="#eef3fd" stroke="#2f5fd0" stroke-width="1.5"/>
+  <circle cx="292" cy="191" r="7.5" fill="none" stroke="#1d3b8a" stroke-width="2.4"/>
+  <line x1="297.5" y1="196.5" x2="304" y2="203" stroke="#1d3b8a" stroke-width="2.8" stroke-linecap="round"/>
+  <text x="385" y="198" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1a2a55">Recherche CBIR</text>
+
+  <!-- web: Rocchio -->
+  <rect x="270" y="220" width="198" height="42" rx="9" fill="#fff4d6" stroke="#d98a0b" stroke-width="1.8"/>
+  <path d="M299 236 A8.5 8.5 0 1 0 301 244" fill="none" stroke="#7a4a00" stroke-width="2.6" stroke-linecap="round"/>
+  <polygon points="303,232 303,242 293,238" fill="#7a4a00"/>
+  <text x="385" y="246" text-anchor="middle" font-size="13.5" font-weight="700" fill="#5a3500">Rocchio (RF)</text>
+
+  <!-- Web <-> SQLite -->
+  <line x1="369" y1="286" x2="369" y2="310" stroke="#e8700d" stroke-width="2.5"/>
+  <polygon points="369,277 363,289 375,289" fill="#e8700d"/><polygon points="369,319 363,307 375,307" fill="#e8700d"/>
+  <rect x="381" y="288" width="42" height="20" rx="10" fill="#ffe3c7" stroke="#e8a566"/>
+  <text x="402" y="302" text-anchor="middle" font-size="11" font-weight="700" fill="#c25a00">SQL</text>
+
+  <!-- SQLite -->
+  <path d="M290 330 v42 q0 14 79 14 q79 0 79-14 v-42" fill="#ffe0c2" stroke="#e8700d" stroke-width="2.5" filter="url(#sh)"/>
+  <ellipse cx="369" cy="330" rx="79" ry="14" fill="#ffd0a3" stroke="#e8700d" stroke-width="2.5"/>
+  <g fill="none" stroke="#222" stroke-width="1.8"><ellipse cx="318" cy="352" rx="9" ry="3.6"/><path d="M309 352 v14 q0 4 9 4 q9 0 9-4 v-14"/><path d="M309 359 q0 4 9 4 q9 0 9-4"/></g>
+  <text x="372" y="353" text-anchor="middle" font-size="15" font-weight="700" fill="#222">SQLite</text>
+  <text x="372" y="371" text-anchor="middle" font-size="13" fill="#222">gallery.db</text>
+
+  <!-- Web -> API -->
+  <line x1="484" y1="150" x2="584" y2="150" stroke="#1f56d6" stroke-width="2.8"/>
+  <polygon points="594,150 581,143 581,157" fill="#1f56d6"/>
+  <rect x="478" y="118" width="124" height="22" rx="11" fill="#dce9ff" stroke="#7fa4ec"/>
+  <text x="540" y="133" text-anchor="middle" font-size="10.5" font-style="italic" fill="#1b3f9a">POST /api/descriptors</text>
+
+  <!-- API -> Web -->
+  <polyline points="598,306 548,306 548,238 494,238" fill="none" stroke="#1e9a45" stroke-width="2.8" stroke-linejoin="round"/>
+  <polygon points="482,238 495,231 495,245" fill="#1e9a45"/>
+  <rect x="478" y="318" width="118" height="22" rx="11" fill="#dcf5e2" stroke="#7fc895"/>
+  <text x="537" y="333" text-anchor="middle" font-size="10.5" font-style="italic" fill="#14702f">JSON · 191 dims</text>
+
+  <!-- API REST -->
+  <rect x="596" y="62" width="218" height="288" rx="16" fill="#d6f1dc" stroke="#22a049" stroke-width="2.5" filter="url(#sh)"/>
+  <rect x="586" y="30" width="238" height="32" rx="16" fill="#1f8f40"/>
+  <g stroke="#fff" fill="none"><circle cx="608" cy="46" r="5" stroke-width="2"/><circle cx="608" cy="46" r="8.5" stroke-width="3.2" stroke-dasharray="2.8 2.7"/></g>
+  <text x="710" y="51" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">api/app.py · port 5001</text>
+
+  <!-- API: Hist. couleur -->
+  <rect x="608" y="76" width="194" height="46" rx="9" fill="#f1fbf3" stroke="#2e9e4f" stroke-width="1.5"/>
+  <g fill="none" stroke-width="5.5">
+    <path d="M630 89.5 A9.5 9.5 0 0 1 639.5 99" stroke="#e53935"/>
+    <path d="M639.5 99 A9.5 9.5 0 0 1 630 108.5" stroke="#fbc02d"/>
+    <path d="M630 108.5 A9.5 9.5 0 0 1 620.5 99" stroke="#43a047"/>
+    <path d="M620.5 99 A9.5 9.5 0 0 1 630 89.5" stroke="#1e88e5"/>
+  </g>
+  <text x="722" y="96" text-anchor="middle" font-size="13.5" font-weight="700" fill="#143a22">Hist. couleur</text>
+  <text x="722" y="112" text-anchor="middle" font-size="12" fill="#2a4a35">96 dims</text>
+
+  <!-- API: Moments -->
+  <rect x="608" y="130" width="194" height="46" rx="9" fill="#f1fbf3" stroke="#2e9e4f" stroke-width="1.5"/>
+  <g fill="#1e7a3a"><rect x="620" y="156" width="6" height="9" rx="1"/><rect x="630" y="148" width="6" height="17" rx="1"/><rect x="640" y="140" width="6" height="25" rx="1"/></g>
+  <text x="722" y="150" text-anchor="middle" font-size="13.5" font-weight="700" fill="#143a22">Moments</text>
+  <text x="722" y="166" text-anchor="middle" font-size="12" fill="#2a4a35">9 dims</text>
+
+  <!-- API: Dom. couleurs -->
+  <rect x="608" y="184" width="194" height="46" rx="9" fill="#f1fbf3" stroke="#2e9e4f" stroke-width="1.5"/>
+  <path d="M621 208 q-4-14 12-14 q16 0 15 11 q-1 7-9 6 q-5 0-4 4 q1 6-6 5 q-7-2-8-12z" fill="#2e9e4f"/>
+  <circle cx="627" cy="200" r="2.4" fill="#e53935"/><circle cx="634" cy="198" r="2.4" fill="#fbc02d"/><circle cx="641" cy="202" r="2.4" fill="#1e88e5"/><circle cx="626" cy="209" r="2.4" fill="#fff"/>
+  <text x="722" y="204" text-anchor="middle" font-size="13.5" font-weight="700" fill="#143a22">Dom. couleurs</text>
+  <text x="722" y="220" text-anchor="middle" font-size="12" fill="#2a4a35">20 dims</text>
+
+  <!-- API: GLCM -->
+  <rect x="608" y="238" width="194" height="46" rx="9" fill="#f1fbf3" stroke="#2e9e4f" stroke-width="1.5"/>
+  <g fill="#1e7a3a">
+    <rect x="620" y="250" width="6" height="6" rx="1"/><rect x="628" y="250" width="6" height="6" rx="1"/><rect x="636" y="250" width="6" height="6" rx="1"/>
+    <rect x="620" y="258" width="6" height="6" rx="1"/><rect x="628" y="258" width="6" height="6" rx="1"/><rect x="636" y="258" width="6" height="6" rx="1"/>
+    <rect x="620" y="266" width="6" height="6" rx="1"/><rect x="628" y="266" width="6" height="6" rx="1"/><rect x="636" y="266" width="6" height="6" rx="1"/>
+  </g>
+  <text x="722" y="258" text-anchor="middle" font-size="13.5" font-weight="700" fill="#143a22">GLCM</text>
+  <text x="722" y="274" text-anchor="middle" font-size="12" fill="#2a4a35">7 dims</text>
+
+  <!-- API: LBP -->
+  <rect x="608" y="292" width="194" height="46" rx="9" fill="#f1fbf3" stroke="#2e9e4f" stroke-width="1.5"/>
+  <g fill="#1e7a3a"><circle cx="624" cy="305" r="2.4"/><circle cx="633" cy="302" r="2.4"/><circle cx="641" cy="309" r="2.4"/><circle cx="627" cy="314" r="2.4"/><circle cx="636" cy="320" r="2.4"/><circle cx="622" cy="323" r="2.4"/><circle cx="643" cy="322" r="2.4"/></g>
+  <text x="722" y="312" text-anchor="middle" font-size="13.5" font-weight="700" fill="#143a22">LBP</text>
+  <text x="722" y="328" text-anchor="middle" font-size="12" fill="#2a4a35">59 dims</text>
+</svg>

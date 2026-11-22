@@ -57,14 +57,7 @@ Chaque image est décrite par ses couleurs et ses textures ; on retrouve ensuite
 
 Le projet est découpé en **deux services** indépendants :
 
-```mermaid
-flowchart LR
-    U[Navigateur] -->|HTTP :8000| W[Application web<br/>Flask + Jinja]
-    W -->|POST multipart :5001| A[API REST<br/>Flask-RESTful]
-    A -->|JSON descripteurs| W
-    W <--> DB[(SQLite<br/>gallery.db)]
-    W <--> F[/web/uploads/]
-```
+![Architecture de Galerie CBIR](docs/architecture.svg)
 
 | Service | Port | Rôle |
 |---|---|---|
